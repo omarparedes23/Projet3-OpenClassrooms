@@ -3,7 +3,118 @@ body
     font-family:'Roboto', sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+
+
+
+
+
+ 
+
+@keyframes opacity{
+    0%{
+        opacity: 1;
+        z-index: 99;
+    }
+
+    90%{
+        opacity: 1;
+    }
+
+
+ 
+    100%{
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+.container{ 	
+    position: fixed;
+	display: flex;
+    align-items: center;
+    justify-content: center;    
+
+    background-color: #e3e3e3;
+    height: 700px;
+    width: 100%;    
+    animation: opacity 3s linear forwards;
+}
+.container_ballon{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+	margin: 0 auto;	
+
+
+    z-index: 1;
+    animation: changer 3s ease-in-out ;    
+    
+    
+}
+
+
+.ballon {
+    width: 30px;
+    height: 30px;
+    background-color: #00b8de;
+    animation: sauter 0.5s ease-in-out alternate ;
+    animation-iteration-count: 6;
+	border-radius: 50%	
+}
+.ballon:nth-child(1) {
+    
+  background-color:#9356DC;
+}
+.ballon:nth-child(2) {
+    animation-delay: .19s;
+  background-color:#FF79DA;
+}
+.ballon:nth-child(3) {
+    animation-delay: .38s;
+    background-color:#99E2D0;
+}
+
+@keyframes sauter {
+    0%  {
+        transform: 
+        scaleX(1.25) ;
+        
+    }
+
+    100% {
+        transform: 
+        translateY(-60px) scaleX(1);
+    }
+}
+@keyframes changer
+{
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(0.75);
+    }    
+    50% {
+        transform: scale(0.5);
+    }
+    75% {
+        transform: scale(0.25);
+    }    
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+
+
 
 header {
     padding:20px;
@@ -177,13 +288,46 @@ header img {
     margin-left: 10px
 }
 
-.fa-heart {
-    color:black;
+
+
+.solid {
+
     position: absolute;
-    font-size: 25px;
     right:20px;
     bottom:35px;    
-}					
+    font-size: 25px;
+
+    z-index: 1;
+    height:28px;
+    padding: 0;
+}
+
+.solid__empty {
+
+    position: absolute;
+    top: 0px;
+    left: 0;
+
+    background-color: transparent;
+    /*color:#99E2D0;*/
+    
+    
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.5s linear ,color 0.5s linear ;
+}
+
+.solid:hover {
+    color: #9356DC;
+    transition: color 0.5s linear forwards;
+  }
+
+.solid:hover  .solid__empty {
+        opacity: 1;
+        color:linear-gradient(to top, #9356DC 50%, #FF79DA);        
+        
+}
+
 
 footer {
     background-color: #3b3939;
