@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">    
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap" rel="stylesheet">         
@@ -15,23 +13,13 @@
     <title>Document</title>
 </head>
 <body>
-
-
-
-
-    <div class="container">
-        <div class="container_ballon">
+    <div class="conteneur">
+        <div class="conteneur_ballon">
             <div class="ballon"></div>
             <div class="ballon"></div>
             <div class="ballon"></div>
          </div>
     </div>
-        
-      
-      
-
-
-
     <div id="bloc_page">
         <header>
             <img src="images/logo/ohmyfood.png" alt="OhmyFood Logo">
@@ -40,15 +28,14 @@
             <p><i class="fas fa-map-marker-alt"></i></p>
             <input type="text" placeholder="Paris, Belleville" name="ville" id="ville">
         </div>        
-        <div class="reservez">
+        <section class="reservez">
             <h1 class="reservez__titre">Réservez le menu qui vous convient</h1>
             <p class="reservez__decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
             <div class="reservez__boutonexplorer">
                 <p class="reservez__boutonexplorer--texte">Explorer nos restaurants</p>
             </div>
-        </div>
-
-        <div class="fonctsection">
+        </section>
+        <section class="fonctsection">
             <h1>Fonctionnement</h1>
             <div class="choisirconteneur">
                 <div class="fonctunitaire">
@@ -67,14 +54,14 @@
                     <p class="fonctunitaire__texte">Dégustez au restaurant</p>
                 </div>                                                
             </div>
-        </div>
+        </section>
 
         <div class="restosection">
             <h2>Restaurants</h2>
             <div class="restocontainer">
-                <a class="restounitaire" href="google.com">
+                <a class="restounitaire" href="sites/lapalette.html">
                     <div class="restounitaire__parent">
-                        <img class="restounitaire__parent--img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg">
+                        <img class="restounitaire__parent--img" src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo restaurant">
                         
                     </div>                        
                     <p class="restounitaire__nouveau">Nouveau</p>
@@ -86,9 +73,9 @@
                     </i>                    
                     
                 </a>
-                <a class="restounitaire" href="google.com">
+                <a class="restounitaire" href="sites/lanote.html">
                     <div class="restounitaire__parent">
-                        <img class="restounitaire__parent--img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg">
+                        <img class="restounitaire__parent--img" src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo restaurant">
                     </div>                        
                     <p class="restounitaire__nouveau">Nouveau</p>
 
@@ -98,9 +85,9 @@
                         <i class="fa-solid fa-heart solid__empty"></i>
                     </i>                    
                 </a>                
-                <a class="restounitaire" href="google.com">
+                <a class="restounitaire" href="sites/alafrancaise.html">
                     <div class="restounitaire__parent">
-                        <img class="restounitaire__parent--img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg">
+                        <img class="restounitaire__parent--img" src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo restaurant">
                     </div>                        
 
                     <h3 class="restounitaire__palette">A la francaise</h3>
@@ -109,9 +96,9 @@
                         <i class="fa-solid fa-heart solid__empty"></i>
                     </i>                    
                 </a>                                
-                <a class="restounitaire" href="google.com">
+                <a class="restounitaire" href="sites/ladelice.html">
                     <div class="restounitaire__parent">
-                        <img class="restounitaire__parent--img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg">
+                        <img class="restounitaire__parent--img" src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="photo restaurant">
                     </div>                        
                     <h3 class="restounitaire__palette">La delice des sens</h3>
                     <p class="restounitaire_menilmontant">Folie-Méricourt</p>
@@ -123,7 +110,6 @@
         </div>
         <footer>
                 <p>ohmyfood</p>
-
                     <ul>
                         <li>
                             <a href="#">
@@ -138,9 +124,8 @@
                             </a>
                         </li>
                         <li><a href="#">Mentions légales</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                     </ul>
-
         </footer>
     </div>    
 </body>
