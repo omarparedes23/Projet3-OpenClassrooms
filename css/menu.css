@@ -32,7 +32,8 @@ section img {
     border-radius:39px 39px 0px 0px;
     padding: 20px 4%;
     position: relative;
-    top: -41px;    
+    top: -41px;
+    /*    margin-bottom: 0px;*/
 }
 .menu-titre {
     display: flex;
@@ -198,7 +199,6 @@ section img {
 footer {
     background-color: #3b3939;
     border:2px solid #3b3939;
-
 }
 footer p {
     margin-left: 40px;
