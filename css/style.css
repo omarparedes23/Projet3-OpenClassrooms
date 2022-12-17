@@ -257,13 +257,18 @@ header img {
 .solid {
     position: absolute;
     right:20px;
-    bottom:35px;    
+    bottom:20px;    
     font-size: 25px;
     z-index: 1;
     height:28px;
     padding: 0;
     color:black;
 }
+@-moz-document url-prefix() {
+    .solid {
+        bottom:35px;    
+    }
+ }
 .solid__empty {
     position: absolute;
     top: 0px;
