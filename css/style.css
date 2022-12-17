@@ -144,9 +144,17 @@ header img {
     margin-left: 20%;
     margin-right: 20%;
     margin-bottom: 50px;
+    padding-top: 20px;
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 400ms;    
 }
 .reservez__boutonexplorer--texte {
     margin-top: 10px;
+}
+.reservez__boutonexplorer:hover {
+    opacity: 0.87;
+    box-shadow: 0 3px 10px rgb(86, 86, 86);
 }
 /* ******* Section Fonctionnement ******* */
 .fonctsection {
